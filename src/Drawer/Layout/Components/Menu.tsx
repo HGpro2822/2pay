@@ -26,6 +26,8 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
+import logo from "../../../Images/logo.png";
+
 type MenuItem = {
   title: string;
   path?: string;
@@ -77,180 +79,180 @@ const menuList: MenuItem[] = [
       // },
     ],
   },
-  // {
-  //   title: "TOKEN",
-  //   submenuOpen: false,
-  //   heading: "HOME",
-  //   mainMenu: [
-  //     {
-  //       title: "TOKEfN",
-  //       path: "/home",
-  //       submenus: [
-  //         {
-  //           title: "TOKEN",
-  //           path: "/token",
-  //         },
-  //         {
-  //           title: "TOKEN-ALLOCATION",
-  //           path: "/token/allocation",
-  //         },
-  //         {
-  //           title: "EXCHANGE PARTNERS",
-  //           path: "/token/exchange-partners",
-  //         },
-  //         {
-  //           title: "DOUMENTS",
-  //           path: "/token/document",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "OUR PRODUCTS",
-  //   submenuOpen: false,
-  //   heading: "HOME",
-  //   mainMenu: [
-  //     {
-  //       title: "OUR PRODUCTS",
-  //       path: "/product",
-  //       submenus: [
-  //         {
-  //           title: "E-WALLET AND DIGITAL FINANCE",
-  //           path: "/product/e-walet",
-  //         },
-  //         {
-  //           title: "MONEY TRANSFER",
-  //           path: "/product/money-transfer",
-  //         },
-  //         {
-  //           title: "CRYPTO WALLET",
-  //           path: "/product/cripto-walet",
-  //         },
+  {
+    title: "TOKEN",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "TOKEfN",
+        path: "/home",
+        submenus: [
+          {
+            title: "TOKEN",
+            path: "/token",
+          },
+          {
+            title: "TOKEN-ALLOCATION",
+            path: "/token/allocation",
+          },
+          {
+            title: "EXCHANGE PARTNERS",
+            path: "/token/exchange-partners",
+          },
+          {
+            title: "DOUMENTS",
+            path: "/token/document",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "OUR PRODUCTS",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "OUR PRODUCTS",
+        path: "/product",
+        submenus: [
+          {
+            title: "E-WALLET AND DIGITAL FINANCE",
+            path: "/product/e-walet",
+          },
+          {
+            title: "MONEY TRANSFER",
+            path: "/product/money-transfer",
+          },
+          {
+            title: "CRYPTO WALLET",
+            path: "/product/cripto-walet",
+          },
 
-  //         {
-  //           title: " CRYPTO EXCHANGE",
-  //           path: "/product/crypto-exchange",
-  //         },
-  //         // {
-  //         //   title: "BEAUTY & SALON BOOKING SERVICE",
-  //         //   path: "/product/beauty-salon",
-  //         // },
-  //         {
-  //           title: "FREELANCER MARKETPLACE",
-  //           path: "/product/Freelance",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title: "OUR PRODUCTS services",
-  //       path: "/product",
-  //       submenus: [
-  //         {
-  //           title: "PRCHARGE PLATFORM",
-  //           path: "/product/recharge",
-  //         },
-  //         {
-  //           title: "HOME SERVICES",
-  //           path: "/product/home-services",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "SERVICES",
-  //   submenuOpen: false,
-  //   heading: "HOME",
-  //   mainMenu: [
-  //     {
-  //       title: "SERVICES",
-  //       path: "/services",
-  //       submenus: [
-  //         {
-  //           title: "DIGITAL MARKETING  ",
-  //           path: "/services/digital-marketing",
-  //         },
-  //         {
-  //           title: "HIRE DEVELOPERS   ",
-  //           path: "/services/hire-developer",
-  //         },
-  //         {
-  //           title: "PAYMENT SOLUTIONS",
-  //           path: "/services/payment-solution",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "EARNING",
-  //   submenuOpen: false,
-  //   heading: "HOME",
-  //   mainMenu: [
-  //     {
-  //       title: "EARNING",
-  //       path: "/home",
-  //       submenus: [
-  //         {
-  //           title: "INVESTMENT",
-  //           path: "/earning/investment",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "BUSINESS",
-  //   submenuOpen: false,
-  //   heading: "HOME",
-  //   mainMenu: [
-  //     {
-  //       title: "BUSINESS",
-  //       path: "/home",
-  //       submenus: [
-  //         {
-  //           title: "About Us",
-  //           path: "/home/aboutus",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "PERSONAL",
-  //   submenuOpen: false,
-  //   heading: "HOME",
-  //   mainMenu: [
-  //     {
-  //       title: "PERSONAL",
-  //       path: "/home",
-  //       submenus: [
-  //         {
-  //           title: "About Us",
-  //           path: "/home/aboutus",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "PRICE PARTNERS",
-  //   submenuOpen: false,
-  //   heading: "HOME",
-  //   mainMenu: [
-  //     {
-  //       title: "PRICE",
-  //       path: "/home",
-  //       submenus: [
-  //         {
-  //           title: "About Us",
-  //           path: "/home/aboutus",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+          {
+            title: " CRYPTO EXCHANGE",
+            path: "/product/crypto-exchange",
+          },
+          // {
+          //   title: "BEAUTY & SALON BOOKING SERVICE",
+          //   path: "/product/beauty-salon",
+          // },
+          {
+            title: "FREELANCER MARKETPLACE",
+            path: "/product/Freelance",
+          },
+        ],
+      },
+      {
+        title: "OUR PRODUCTS services",
+        path: "/product",
+        submenus: [
+          {
+            title: "PRCHARGE PLATFORM",
+            path: "/product/recharge",
+          },
+          {
+            title: "HOME SERVICES",
+            path: "/product/home-services",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "SERVICES",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "SERVICES",
+        path: "/services",
+        submenus: [
+          {
+            title: "DIGITAL MARKETING  ",
+            path: "/services/digital-marketing",
+          },
+          {
+            title: "HIRE DEVELOPERS   ",
+            path: "/services/hire-developer",
+          },
+          {
+            title: "PAYMENT SOLUTIONS",
+            path: "/services/payment-solution",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "EARNING",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "EARNING",
+        path: "/home",
+        submenus: [
+          {
+            title: "INVESTMENT",
+            path: "/earning/investment",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "BUSINESS",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "BUSINESS",
+        path: "/home",
+        submenus: [
+          {
+            title: "About Us",
+            path: "/home/aboutus",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "PERSONAL",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "PERSONAL",
+        path: "/home",
+        submenus: [
+          {
+            title: "About Us",
+            path: "/home/aboutus",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "PRICE PARTNERS",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "PRICE",
+        path: "/home",
+        submenus: [
+          {
+            title: "About Us",
+            path: "/home/aboutus",
+          },
+        ],
+      },
+    ],
+  },
   // {
   //   title: "BUY TOKEN",
   //   submenuOpen: false,
@@ -353,17 +355,20 @@ const SecondSection = () => {
         <AppBar position="fixed">
           <Toolbar
             sx={{
-              backgroundColor: "#F2EFFF",
+              background: "linear-gradient(to right, #B311F5, #120118,#120118)",
+
               height: "100%",
               width: "100%",
-              pt: 4,
             }}
           >
-            <Grid>
+            <>
               <Grid
                 container
                 width={"100%"}
-                sx={{ backgroundColor: "#F2EFFF" }}
+                // sx={{
+                //   background:
+                //     "linear-gradient(to right, #B311F5, #120118,#120118)",
+                // }}
                 alignContent="center"
                 justifyContent="space-between"
                 // px={3}
@@ -371,9 +376,9 @@ const SecondSection = () => {
               >
                 <Grid
                   item
-                  xs={6}
-                  md={6}
-                  sm={6}
+                  xs={4}
+                  md={4}
+                  sm={4}
                   justifyContent="left"
                   alignContent="center"
                   alignItems={"center"}
@@ -384,7 +389,7 @@ const SecondSection = () => {
                       sx={{
                         justifyContent: "center",
                         fontSize: "42px",
-                        color: appColors.default[100],
+                        color: "#F2EFFF",
                       }}
                     />
                   </IconButton>
@@ -397,23 +402,24 @@ const SecondSection = () => {
                   sm={6}
                   justifyContent="left"
                   alignContent="center"
-                  alignItems={"center"}
+                  alignItems={"left"}
                   display={"flex"}
+                  mr={4}
                 >
-                  <Grid container justifyContent="right" alignContent="flex">
+                  <Grid container justifyContent="flex-end" alignContent="flex">
                     <Grid item>
-                      {/* <img
+                      <img
                         src={logo}
                         style={{ height: "50px", width: "50px" }}
                         alt="logo"
-                      /> */}
+                      />
                     </Grid>
                   </Grid>
-                  <Grid item sx={{ mt: "6px" }}>
+                  <Grid item sx={{ mt: "10px" }}>
                     <Typography
                       sx={{
                         fontSize: 19,
-                        color: appColors.black[100],
+                        color: "#D6CBFF",
                         fontWeight: 900,
                       }}
                     >
@@ -425,7 +431,7 @@ const SecondSection = () => {
                       variant="h4"
                       sx={{
                         fontSize: "13px",
-                        color: appColors.black[100],
+                        color: "#D6CBFF",
                         // ml: "-20px",
                       }}
                     >
@@ -433,66 +439,9 @@ const SecondSection = () => {
                     </Typography>
                   </Grid>
                 </Grid>
-
-                {/* <Grid item xs={6} md={6} sm={6}>
-                  <Grid container justifyContent="right" alignContent="flex">
-                    <Grid item>
-                      <img
-                        src={logo}
-                        style={{ height: "50px", width: "50px" }}
-                      />
-                    </Grid>
-
-                    <Grid item sx={{ mt: "6px" }}>
-                      <Typography
-                        sx={{
-                          fontSize: 19,
-                          color: appColors.black[100],
-                          fontWeight: 900,
-                        }}
-                      >
-                        TUPAY
-                      </Typography>
-                    </Grid>
-                    <Grid item sx={{ mt: "15px" }}>
-                      <Typography
-                        variant="h4"
-                        sx={{
-                          fontSize: "13px",
-                          color: appColors.black[100],
-                          ml: "-20px",
-                        }}
-                      >
-                        CHAIN
-                      </Typography>
-                    </Grid>
-                  </Grid>
-                </Grid> */}
               </Grid>
               <>
-                {/* {drawerOpen && (
-                  <IconButton
-                    onClick={handleCloseDrawer}
-                    sx={{
-                      position: "absolute",
-                      top: 0,
-                      left: "250px",
-                      zIndex: 1999,
-                      border: 2,
-                      borderColor: "#D6CBFF",
-                      backgroundColor: "#281D52",
-                    }}
-                  >
-                    <CloseIcon
-                      sx={{
-                        justifyContent: "center",
-                        fontSize: "42px",
-                        color: appColors.white,
-                      }}
-                    />
-                  </IconButton>
-                )} */}
-
+               
                 <Drawer open={drawerOpen}>
                   <CloseIcon
                     onClick={handleCloseDrawer}
@@ -567,45 +516,57 @@ const SecondSection = () => {
                   </List>
                 </Drawer>
               </>
-            </Grid>
+            </>
           </Toolbar>
         </AppBar>
       ) : (
         <AppBar position="fixed">
-          <Toolbar sx={{ backgroundColor: "#F2EFFF" }}>
+          <Toolbar
+            sx={{
+              background: "linear-gradient(to right, #B311F5, #120118,#120118)",
+            }}
+          >
             <Grid
               container
               width={"100%"}
-              sx={{ backgroundColor: "#F2EFFF" }}
+              sx={{
+                background:
+                  "linear-gradient(to right, #B311F5, #120118,#120118)",
+              }}
               alignContent="flex"
               justifyContent="space-between"
-              px={3}
+              px={10}
             >
               <Grid item lg={3}>
                 <Grid container justifyContent="left" alignContent="flex">
                   <Grid item>
-                    {/* <img
+                    <img
                       src={logo}
                       style={{ height: "75px", width: "75px" }}
                       alt="logo"
-                    /> */}
+                    />
                   </Grid>
 
                   <Grid item sx={{ mt: "13px" }}>
                     <Typography
                       variant="h4"
-                      sx={{ color: appColors.black[100], ml: 1 }}
+                      sx={{
+                        fontSize: "28px",
+                        color: "#D6CBFF",
+                        fontWeight: 800,
+                        ml: 1,
+                      }}
                     >
                       TUPAY
                     </Typography>
                   </Grid>
-                  <Grid item sx={{ mt: "35px" }}>
+                  <Grid item sx={{ mt: "40px" }}>
                     <Typography
-                      variant="h4"
                       sx={{
-                        fontSize: "15px",
-                        color: appColors.black[100],
-                        ml: "-20px",
+                        fontSize: "14px",
+                        color: "#D6CBFF",
+                        ml: "-30px",
+                        fontWeight: 800,
                       }}
                     >
                       CHAIN
@@ -626,9 +587,9 @@ const SecondSection = () => {
                     aria-haspopup="true"
                     aria-expanded={anchorEl ? "true" : undefined}
                     sx={{
-                      fontSize: "17px",
+                      fontSize: "16px",
                       fontWeight: 600,
-                      color: appColors.black[100],
+                      color: "#F2EFFF",
                     }}
                   >
                     {menuItem.title}
@@ -664,7 +625,10 @@ const SecondSection = () => {
                   PaperProps={{
                     sx: {
                       borderRadius: 8,
-                      background: `linear-gradient(90deg, #F2EFFF, #F2EFFF, #F2EFFF,#D6CBFF)`,
+                      background: "#120118",
+                      borderColor: "#B311F5",
+                      borderWidth: 1,
+                      borderStyle: "solid",
                     },
                   }}
                 >
@@ -689,6 +653,7 @@ const SecondSection = () => {
                                       fontWeight: 600,
                                       fontFamily: "Montserrat",
                                       py: 1,
+                                      color: "#F2EFFF",
                                     }}
                                   >
                                     <span>{submenuItem.title}</span>
@@ -696,6 +661,7 @@ const SecondSection = () => {
                                       style={{
                                         fontSize: 40,
                                         paddingLeft: "1px",
+                                        color: "#F2EFFF",
                                       }}
                                     />
                                   </MenuItem>

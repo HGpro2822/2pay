@@ -16,7 +16,8 @@ export const theme = createTheme({
           color: appColors.white,
           borderRadius: "0px 100px 0px 0px",
           borderRight: "5px solid #D6CBFF",
-          background: "#281D52",
+          background:
+                "linear-gradient(to right,#120118,#120118,#120118,#120118, #120118,#120118)",
           // fontSize: "12px"
         }
       }
