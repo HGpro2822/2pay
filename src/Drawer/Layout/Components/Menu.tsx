@@ -356,7 +356,6 @@ const SecondSection = () => {
           <Toolbar
             sx={{
               background: "linear-gradient(to right, #B311F5, #120118,#120118)",
-
               height: "100%",
               width: "100%",
             }}
@@ -441,7 +440,6 @@ const SecondSection = () => {
                 </Grid>
               </Grid>
               <>
-               
                 <Drawer open={drawerOpen}>
                   <CloseIcon
                     onClick={handleCloseDrawer}
@@ -535,9 +533,9 @@ const SecondSection = () => {
               }}
               alignContent="flex"
               justifyContent="space-between"
-              px={10}
+              px={5}
             >
-              <Grid item lg={3}>
+              <Grid item lg={3} xs={3} md={3} sm={3}>
                 <Grid container justifyContent="left" alignContent="flex">
                   <Grid item>
                     <img
@@ -575,7 +573,7 @@ const SecondSection = () => {
                 </Grid>
               </Grid>
 
-              <Grid item lg={9} container justifyContent="right">
+              <Grid item lg={9}  xs={9} md={9} sm={9} container justifyContent="right">
                 {menuList.map((menuItem) => (
                   <Button
                     key={menuItem.title}
