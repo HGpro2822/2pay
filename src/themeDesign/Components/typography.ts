@@ -9,7 +9,7 @@ export const typography: TypographyOptions = {
   h1: {
     color: palette.text.primary,
     fontWeight: 900,
-    fontSize: "65px",
+    fontSize: "60px",
     lineHeight: 1.2,
   },
   h2: {

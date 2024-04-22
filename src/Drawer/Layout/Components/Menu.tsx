@@ -25,9 +25,9 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import logo from "../../../Images/logo.png";
-
+import "../../../style.css";
 type MenuItem = {
   title: string;
   path?: string;
@@ -52,33 +52,6 @@ type SubmenuItem = {
   open?: boolean;
 };
 const menuList: MenuItem[] = [
-  {
-    title: "COMPANY",
-    submenuOpen: false,
-    heading: "COMPANY",
-    mainMenu: [
-      {
-        title: "HOMEEE",
-        path: "/home",
-        submenus: [
-          {
-            title: "HOME",
-            path: "/home",
-          },
-        ],
-      },
-      // {
-      //   title: "FOLLOW US",
-      //   path: "/home",
-      //   submenus: [
-      //     {
-      //       title: "FOLLOW US",
-      //       path: "/home",
-      //     },
-      //   ],
-      // },
-    ],
-  },
   {
     title: "TOKEN",
     submenuOpen: false,
@@ -237,7 +210,24 @@ const menuList: MenuItem[] = [
     ],
   },
   {
-    title: "PRICE PARTNERS",
+    title: "PARTNERS",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "PARTNERS",
+        path: "/home",
+        submenus: [
+          {
+            title: "About Us",
+            path: "/home/aboutus",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "BUY TUPAY",
     submenuOpen: false,
     heading: "HOME",
     mainMenu: [
@@ -253,23 +243,23 @@ const menuList: MenuItem[] = [
       },
     ],
   },
-  // {
-  //   title: "BUY TOKEN",
-  //   submenuOpen: false,
-  //   heading: "HOME",
-  //   mainMenu: [
-  //     {
-  //       title: "BUY TUPAY",
-  //       path: "/home",
-  //       submenus: [
-  //         {
-  //           title: "About Us",
-  //           path: "/home/aboutus",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    title: "EXPLORER",
+    submenuOpen: false,
+    heading: "HOME",
+    mainMenu: [
+      {
+        title: "EXPLORER",
+        path: "/home",
+        submenus: [
+          {
+            title: "About Us",
+            path: "/home/aboutus",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 const SecondSection = () => {
@@ -356,9 +346,7 @@ const SecondSection = () => {
           <Toolbar
             sx={{
               background: "linear-gradient(to right, #B311F5, #120118,#120118)",
-
               height: "100%",
-              width: "100%",
             }}
           >
             <>
@@ -419,7 +407,7 @@ const SecondSection = () => {
                     <Typography
                       sx={{
                         fontSize: 19,
-                        color: "#D6CBFF",
+                        color: "#F2EFFF",
                         fontWeight: 900,
                       }}
                     >
@@ -431,7 +419,7 @@ const SecondSection = () => {
                       variant="h4"
                       sx={{
                         fontSize: "13px",
-                        color: "#D6CBFF",
+                        color: "#F2EFFF",
                         // ml: "-20px",
                       }}
                     >
@@ -441,13 +429,12 @@ const SecondSection = () => {
                 </Grid>
               </Grid>
               <>
-               
                 <Drawer open={drawerOpen}>
                   <CloseIcon
                     onClick={handleCloseDrawer}
                     sx={{
                       justifyContent: "center",
-                      fontSize: "50px",
+                      fontSize: "40px",
                       color: appColors.white,
                       paddingLeft: 2,
                       paddingTop: 2,
@@ -465,11 +452,11 @@ const SecondSection = () => {
                           {menuItem.mainMenu &&
                             (menuItem.mainMenu.length > 0 ? (
                               <ArrowDropDownIcon
-                                style={{ fontSize: 40, paddingLeft: "1px" }}
+                                style={{ fontSize: 25, paddingLeft: "0.5px" }}
                               />
                             ) : (
                               <ArrowDropUpIcon
-                                style={{ fontSize: 40, paddingLeft: "1px" }}
+                                style={{ fontSize: 25, paddingLeft: "0.5px" }}
                               />
                             ))}
                         </ListItemButton>
@@ -492,7 +479,7 @@ const SecondSection = () => {
                                         display: "flex",
                                         justifyContent: "space-between",
                                         alignItems: "center",
-                                        fontSize: "1.5rem",
+                                        fontSize: "0.5rem",
                                         fontWeight: 600,
                                         fontFamily: "Montserrat",
                                         pl: 4,
@@ -514,6 +501,23 @@ const SecondSection = () => {
                       </React.Fragment>
                     ))}
                   </List>
+
+                  <Box sx={{ p: 2 }}>
+                    <Button
+                      sx={{
+                        fontSize: "14px",
+                        fontWeight: 400,
+                        color: "#F2EFFF",
+                        fontFamily: "Judson",
+                        bgcolor: "#AC05F0",
+                        border: "1px solid #AC05F0",
+                        animation: "glowingLights 2s infinite",
+                      }}
+                    >
+                      Contact us
+                      <ArrowRightAltIcon />
+                    </Button>
+                  </Box>
                 </Drawer>
               </>
             </>
@@ -535,9 +539,9 @@ const SecondSection = () => {
               }}
               alignContent="flex"
               justifyContent="space-between"
-              px={10}
+              px={5}
             >
-              <Grid item lg={3}>
+              <Grid item lg={2} xs={3} md={3} sm={3}>
                 <Grid container justifyContent="left" alignContent="flex">
                   <Grid item>
                     <img
@@ -552,9 +556,8 @@ const SecondSection = () => {
                       variant="h4"
                       sx={{
                         fontSize: "28px",
-                        color: "#D6CBFF",
+                        color: "#F2EFFF",
                         fontWeight: 800,
-                        ml: 1,
                       }}
                     >
                       TUPAY
@@ -564,7 +567,7 @@ const SecondSection = () => {
                     <Typography
                       sx={{
                         fontSize: "14px",
-                        color: "#D6CBFF",
+                        color: "#F2EFFF",
                         ml: "-30px",
                         fontWeight: 800,
                       }}
@@ -575,7 +578,15 @@ const SecondSection = () => {
                 </Grid>
               </Grid>
 
-              <Grid item lg={9} container justifyContent="right">
+              <Grid
+                item
+                lg={8.5}
+                xs={9}
+                md={7}
+                sm={7}
+                container
+                justifyContent="right"
+              >
                 {menuList.map((menuItem) => (
                   <Button
                     key={menuItem.title}
@@ -587,9 +598,10 @@ const SecondSection = () => {
                     aria-haspopup="true"
                     aria-expanded={anchorEl ? "true" : undefined}
                     sx={{
-                      fontSize: "16px",
-                      fontWeight: 600,
+                      fontSize: "14px",
+                      fontWeight: 400,
                       color: "#F2EFFF",
+                      fontFamily: "Judson",
                     }}
                   >
                     {menuItem.title}
@@ -597,11 +609,11 @@ const SecondSection = () => {
                       (menuItem.mainMenu.length > 0 ? (
                         currentMenu === menuItem && anchorEl ? (
                           <ArrowDropUpIcon
-                            style={{ fontSize: 40, paddingLeft: "1px" }}
+                            style={{ fontSize: 25, paddingLeft: "0.5px" }}
                           />
                         ) : (
                           <ArrowDropDownIcon
-                            style={{ fontSize: 40, paddingLeft: "1px" }}
+                            style={{ fontSize: 25, paddingLeft: "0.5px" }}
                           />
                         )
                       ) : null)}
@@ -674,6 +686,23 @@ const SecondSection = () => {
                     </Box>
                   )}
                 </Menu>
+              </Grid>
+
+              <Grid item lg={1.5} md={2} sm={2} py={2.5} alignItems="center">
+                <Button
+                  sx={{
+                    fontSize: "12px",
+                    fontWeight: 400,
+                    color: "#F2EFFF",
+                    fontFamily: "Judson",
+                    bgcolor: "#AC05F0",
+                    border: "1px solid #AC05F0",
+                    animation: "glowingLights 2s infinite",
+                  }}
+                >
+                  Contact us
+                  <ArrowRightAltIcon />
+                </Button>
               </Grid>
             </Grid>
           </Toolbar>

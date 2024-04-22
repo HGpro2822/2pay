@@ -1,7 +1,8 @@
 import React, { Suspense } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 // import Home from "../Pages/Home";
-// import EWalet from "../Pages/E-Walet";
+import EWalet from "../Pages/E-Walet";
+import Loader from "./Loader";
 // import MoneyTransfer from "../Pages/MoneyTransfer";
 // import CryptoWalet from "../Pages/Crypto-Walet";
 // import CryptoExchange from "../Pages/CryptoExchange";
@@ -26,8 +27,16 @@ import { Routes, Route, Navigate } from "react-router-dom";
 const AppRoutes = () => {
   return (
     <Routes>
+      <Route
+        element={
+          <Suspense fallback={<Loader />}>
+            <EWalet />
+          </Suspense>
+        }
+        path="/product/e-walet"
+      />
       {/* <Route path="/home" element={<Home />} />
-      <Route path="/product/e-walet" element={<EWalet />} />
+      
       <Route path="/product/money-transfer" element={<MoneyTransfer />} />
       <Route path="/product/cripto-walet" element={<CryptoWalet />} />
       <Route path="/product/crypto-exchange" element={<CryptoExchange />} />

@@ -3,12 +3,7 @@ export const appColors = {
   text: "#000000",
 
   default: {
-    100: "#281D52", //purple
-    95: "#38118A",
-    20: "#A994FF",
-    18: "#8F7575",
-    15: "#F2EFFF", //pageyellow
-    10: "#ECE4E4", //font
+    40: "#F2EFFF", //text
   },
   purple: {
     100: "#3E1F47",
@@ -28,12 +23,7 @@ export const appColors = {
     15: "#E6F2FF",
     10: "#eabffa",
   },
-  lightPurple: {
-    100: "#cba9ef",
-    90: "#d4b0f9",
-    80: "#E8E8E8",
-    50: "#f2ebfb",
-  },
+
   green: {
     100: "#0b525b",
     95: "#014737",
@@ -45,12 +35,6 @@ export const appColors = {
     65: "#31C48D",
 
     50: "#84E1BC",
-
-    20: "#BCF0DA",
-    15: "#DEF7EC",
-    13: "#D3E5DA",
-    11: "#EDF8F1",
-    10: "#F3FAF7",
   },
   black: {
     100: "#000000",
@@ -58,6 +42,7 @@ export const appColors = {
     90: "#343A40",
     85: "#495057",
 
+    50: "#c6c6c6",
     40: "#495057",
     35: "#ADB5BD",
     30: "#CED4DA",
