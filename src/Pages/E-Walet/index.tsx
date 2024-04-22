@@ -355,6 +355,22 @@ export default function Index() {
               TuPay Digital Solution
             </Typography>
           </Grid>
+          <Grid item lg={11} ml={isMobile ? "10px" : "30px"} my={2}>
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontSize: isMobile ? "17px" : "24px",
+                fontWeight: 400,
+                letterSpacing: "0.4px",
+                lineHeight: isMobile ? 1.15 : 1.75,
+                color: appColors.default[40],
+              }}
+            >
+              We set out to close this gap and support merchant partners'
+              expansion. We now serve as a one-stop shop for fin-tech, providing
+              millions of retailers with simple, secure financial solutions.
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
     </Box>
