@@ -322,7 +322,22 @@ export default function Index() {
           backgroundPosition: "center",
         }}
       >
-        
+        <Grid item lg={5}>
+          <Typography
+            sx={{
+              fontSize: isMobile ? "42px" : "50px",
+              fontWeight: 800,
+              letterSpacing: "0.4px",
+              lineHeight: isMobile ? "60px" : "77.45px",
+              backgroundImage:
+                "linear-gradient(to right, #850BB7 15%, #D6CBFF 50%, #D6CBFF 100%)",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            Why
+          </Typography>
+        </Grid>
       </Grid>
     </Box>
   );
