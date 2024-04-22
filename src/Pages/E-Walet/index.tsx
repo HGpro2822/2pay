@@ -309,7 +309,6 @@ export default function Index() {
           </Typography>
         </Grid>
       </Grid>
-      {/* 3 */}
     </Box>
   );
 }
