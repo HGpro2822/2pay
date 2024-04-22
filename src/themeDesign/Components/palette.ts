@@ -4,14 +4,14 @@ import { PaletteMode } from "@mui/material";
 export const palette = {
   mode: "light" as PaletteMode,
   primary: {
-    main: appColors.green[100],
+    main: appColors.black[100],
     light: appColors.green[65],
     dark: appColors.green[95],
     contrastText: appColors.white,
   },
   secondary: {
     main: appColors.green[50],
-    light: appColors.green[20],
+    light: appColors.black[50],
     dark: appColors.green[70],
     contrastText: appColors.purple[15],
   },
