@@ -310,69 +310,6 @@ export default function Index() {
         </Grid>
       </Grid>
       {/* 3 */}
-      <Grid
-        container
-        justifyContent="center"
-        alignContent="center"
-        px={isMobile ? 3 : 10}
-        py={isMobile ? 5 : 10}
-        style={{
-          backgroundImage: `url(${ewbg1})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <Grid item>
-          <Typography
-            sx={{
-              fontSize: isMobile ? "42px" : "50px",
-              fontWeight: 800,
-              letterSpacing: "0.4px",
-              lineHeight: isMobile ? "60px" : "77.45px",
-              backgroundImage:
-                "linear-gradient(to right, #850BB7 1%, #D6CBFF 50%, #D6CBFF 100%)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-              textAlign: "center",
-            }}
-          >
-            Why
-          </Typography>
-        </Grid>
-        <Grid item lg={12} md={12} sm={12} xs={12}>
-          <Typography
-            sx={{
-              fontSize: isMobile ? "45px" : "58px",
-              fontWeight: 900,
-              letterSpacing: "0.4px",
-              lineHeight: isMobile ? "60px" : "77.45px",
-              backgroundImage:
-                "linear-gradient(to right, #850BB7 5%,#D6CBFF 25%, #D6CBFF 50%, #D6CBFF 100%)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-              textAlign: "center",
-            }}
-          >
-            TuPay Digital Solution
-          </Typography>
-        </Grid>
-        <Grid item lg={11} ml={isMobile ? "10px" : "30px"} my={2}>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontSize: isMobile ? "17px" : "24px",
-              fontWeight: 400,
-              letterSpacing: "0.4px",
-              lineHeight: isMobile ? 1.15 : 1.75,
-              color: appColors.default[40],
-            }}
-          >
-            We set out to close this gap and support merchant partners'
-            expansion. We now serve as a one-stop shop for fin-tech, providing
-            millions of retailers with simple, secure financial solutions.
-          </Typography>
-        </Grid>
-      </Grid>
     </Box>
   );
 }
